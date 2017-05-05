@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
 #include<malloc.h>
 struct dat{
 	int *S;
@@ -21,16 +23,16 @@ int fact(int x)
 }
 
 
-int main()
+int main(int argc, char* argv[])
 {       
 	int  i,k;
-	printf("Enter the number \n");
-	scanf("%d",&i);
+	i=atoi(argv[1]);
+/*	printf("Enter the number \n");
+	scanf("%d",&i);*/
 	if(i<0){
 		printf("WRONG INPUT !!!!!!!!!!!\n");
 		return 0;
 	}	
-
 	fact(i);
 	for(k=0;k<dat.num;k++)
 		printf("%d\t",dat.S[k]);
