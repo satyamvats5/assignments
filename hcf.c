@@ -8,7 +8,7 @@ int main()
 		k=(i>j)?j:i;
 		l=(i>j)?i:j;
 		for(x=k;x>0;x--){
-			if((l%x)==0&&(k%x)==0){
+			if((l%x)==0 && (k%x==0)){
 			printf("Required HCF =%d\n",x);
 			break;
 			}
